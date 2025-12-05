@@ -19,8 +19,17 @@
         <canvas id="gameCanvas" width="400" height="400"></canvas>
         
         <div id="controls">
-            <p>使用 **W A S D** 或 **方向键** 控制移动。</p>
+            <p class="keyboard-hint">使用 **W A S D** 或 **方向键** 控制移动。</p>
             <button onclick="startGame()">开始游戏 / 重新开始</button>
+        </div>
+
+        <div id="touch-controls">
+            <button id="up-btn" data-dir="UP">⬆️</button>
+            <div class="side-controls">
+                <button id="left-btn" data-dir="LEFT">⬅️</button>
+                <button id="right-btn" data-dir="RIGHT">➡️</button>
+            </div>
+            <button id="down-btn" data-dir="DOWN">⬇️</button>
         </div>
 
         <div id="game-message" class="hidden">
